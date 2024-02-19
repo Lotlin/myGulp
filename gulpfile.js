@@ -5,7 +5,7 @@ import sassPkg from 'sass';
 import gulpSass from 'gulp-sass';
 import {deleteAsync} from 'del';
 
-const preproc = false;
+const preproc = true;
 const sass = gulpSass(sassPkg);
 
 export const html = () => gulp
@@ -16,7 +16,7 @@ export const html = () => gulp
 export const style = () => {
   if (preproc) {
     return gulp
-        .src('src/scss/**/*')
+        .src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
