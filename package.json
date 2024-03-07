@@ -10,6 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "cover 99.5%",
+    "not IE 11"
+  ],
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
@@ -18,7 +22,9 @@
     "critical": "^7.1.0",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-avif": "^1.1.1",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cssimport": "^7.0.0",
     "gulp-htmlmin": "^5.0.1",
